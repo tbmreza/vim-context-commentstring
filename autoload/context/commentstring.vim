@@ -42,3 +42,10 @@ let g:context#commentstring#table['vue'] = {
 			\ 'vue_scss'    : '/*%s*/',
 			\}
 
+let g:context#commentstring#table.svelte = {
+			\ 'javaScript': '//%s',
+			\ 'cssStyle': '/*%s*/',
+			\ 'htmlTag': '<!-- %s -->',
+			\ 'htmlEndTag': '<!-- %s -->',
+			\ 'undefined': '<!-- %s -->'
+			\}
