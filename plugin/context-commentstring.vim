@@ -54,6 +54,9 @@ function! s:UpdateComments()
 				return
 			endif
 		endfor
+	elseif exists("g:context#commentstring#table[&filetype]['undefined']")
+		let &l:commentstring = g:context#commentstring#table[&filetype]['undefined']
+		return
 	endif
 	let &l:comments = b:original_comments
 endfunction
